@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dating Site</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h1>Please Enter Your Details For Our Dating Website!</h1>
+			<fieldset>
+				<legend>Your Face</legend>
+				<label for="image">Your Image:</label>
+				<input type="file" name="image" id="image" required> <br>
+				<label for="preview">Image Preview:</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Your General Details</legend>
+				<label for="name">Name:</label>
+				<input type="text" name="name" id="name" required placeholder="Your full name">
+				<br>
+				<label for="gender">Gender:</label>
+				<input type="radio" name="gender" id="gender" value="male" required>Male
+				<input type="radio" name="gender" id="gender" value="female" required>Female
+				<br>
+				<label for="age">Age:</label>
+				<input type="number" name="age" id="age" required placeholder="18">
+				<br>
+				<label for="date">Date of birth:</label>
+				<input type="date" name="date" id="date" required>
+				<br>
+				<label for="date">Favorite color:</label>
+				<input type="color" name="date" id="date" required>
+				<br>
+				<label for="country">Which country:</label>
+				<select id="country">
+					<option></option>
+					<option>Nigeria</option>
+					<option>Niger</option>
+					<option>Mali</option>
+					<option>Senegal</option>
+					<option>Togo</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Your Indicators</legend>
+				<label for="height">Height:</label>
+				<span class="red pd-bm">Short</span> <input type="range" min="0" max="100" name="height" id="height"> <span class="purple pd-bm">Tall</span>  
+				<br>
+				<label for="salary">Salary:</label>
+				<span class="red pd-tp">Poor</span>
+				<input type="range" min="0" max="100" name="salary" id="salary">
+				<span class="purple pd-tp">Rich</span>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Your Contact Information</legend>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email">
+				<br>
+				<label for="mobile">Mobile:</label>
+				<input type="tel" name="mobile" id="mobile">
+				<br>
+				<label>Address:</label>
+				<textarea></textarea>
+				<br>
+				<label id="radio" for="contact">Method to contact you:</label>
+				<input type="checkbox" name="email" value="email">Email
+				<input type="checkbox" name="whatsapp" value="whatsapp">Whatsapp
+				<input type="checkbox" name="in-app-chat" value="in-app-chat">In-app Chat
+			</fieldset>
+
+			<input type="submit" name="submit">
+		</div>
+	</div>
+</body>
+</html>
